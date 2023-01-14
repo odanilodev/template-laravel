@@ -62,7 +62,7 @@
                 </a>
                 <ul aria-expanded="false">
                     <li>
-                        <a href="{{ route('form/input/new') }}"><i class="bi bi-list-ul"></i> Listagem </a>
+                        <a href="{{route('form/input/new')}}"><i class="bi bi-list-ul"></i> Listagem </a>
                     </li>
 
                     <li>
