@@ -1,0 +1,30 @@
+/* =================================================================
+# Employee Page
+===================================================================*/
+.add-employee a {
+    font-weight: bold;
+}
+
+.add-employee i {
+    font-weight: bold;
+}
+
+.setting i {
+    position: absolute;
+    right: 30px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.img-employee {
+    border-radius: 20px;
+}
+
+/* modal Employee */
+
+.closeModal{
+    background: transparent;
+    border: none;
+}
+
+

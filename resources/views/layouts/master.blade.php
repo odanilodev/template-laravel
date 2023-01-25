@@ -24,6 +24,7 @@
 	<link href="{{URL::to('assets/vendor/jquery-nice-select/css/nice-select.css')}}" rel="stylesheet">
 	<!-- Style css -->
     <link href="{{URL::to('assets/css/style.css')}}" rel="stylesheet">
+	<link href="{{URL::to('assets/css/adm_style.css')}}" rel="stylesheet">
 
 	{{-- message toastr --}}
 	<link rel="stylesheet" href="{{ URL::to('assets/css/toastr.min.css') }}">

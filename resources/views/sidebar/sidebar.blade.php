@@ -62,7 +62,7 @@
                 </a>
                 <ul aria-expanded="false">
                     <li>
-                        <a href="{{ route('form/input/new') }}"><i class="bi bi-list-ul"></i> Listagem </a>
+                        <a href="{{ route('user/table') }}"><i class="bi bi-list-ul"></i> Listagem </a>
                     </li>
 
                     <li>
@@ -72,7 +72,7 @@
             </li>
 
             <li>
-                <a href="{{ route('user/table') }}" aria-expanded="false">
+                <a href="{{ route('employee') }}" aria-expanded="false">
                     <i class="bi bi-person-lines-fill"></i>
                     <span class="nav-text">Profissionais</span>
                 </a>

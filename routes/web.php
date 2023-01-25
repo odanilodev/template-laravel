@@ -6,6 +6,7 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\ResetPasswordController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\UserManagementController;
 use App\Http\Controllers\TypeFormController;
 /*
@@ -68,5 +69,11 @@ Route::controller(UserManagementController::class)->group(function () {
 Route::controller(TypeFormController::class)->group(function () {
     Route::get('form/input/new', 'index')->middleware('auth')->name('form/input/new');
 
+});
+
+// -------------------------- employee page ----------------------//
+Route::controller(EmployeeController::class)->group(function () {
+    Route::get('/employee', 'index')->middleware('auth')->name('employee');
+    Route::get('form/employee', 'create')->middleware('auth')->name('form/employee');
 });
 
