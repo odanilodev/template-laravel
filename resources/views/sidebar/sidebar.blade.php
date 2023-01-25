@@ -79,7 +79,7 @@
             </li>
 
             <li>
-                <a href="javascript:void()" aria-expanded="false">
+                <a href="{{ route('units') }}" aria-expanded="false">
                     <i class="bi bi-shop"></i>
                     <span class="nav-text">Minhas Unidades</span>
                 </a>
