@@ -23,7 +23,7 @@
                                 <div class="row  mt-xl-0 mt-4">
                                     <div class="col-md-12">
                                         <h4 class="card-title">{{$items->name}}</h4>
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit psu olor</span>
+                                        <span>Lorem ipsum dolor sit amett, consectetur adipiscing elit psu olor</span>
                                         <ul class="card-list mt-4">
                                             <li><span class="bg-blue circle"></span>Account<span>20%</span></li>
                                             <li><span class="bg-success circle"></span>Services<span>40%</span></li>
