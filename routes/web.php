@@ -9,6 +9,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\UserManagementController;
 use App\Http\Controllers\TypeFormController;
+use App\Http\Controllers\UnitController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -77,3 +79,15 @@ Route::controller(EmployeeController::class)->group(function () {
     Route::get('form/employee', 'create')->middleware('auth')->name('form/employee');
 });
 
+// ----------------------- units panel ----------------------//
+Route::controller(UnitController::class)->group(function () {
+    Route::get('/units', 'index')->middleware('auth')->name('units');
+    Route::get('/form/units', 'create')->middleware('auth')->name('form/units');
+    Route::post('/units/store', 'store')->middleware('auth')->name('units/store');
+    Route::get('/units/destroy/{id}', 'destroy')->middleware('auth')->name('units/destroy');
+    Route::get('/units/edit/{id}', 'edit')->middleware('auth')->name('units/edit');
+    Route::post('/units/update/{id}', 'update')->middleware('auth')->name('units/update');
+
+
+   
+});
