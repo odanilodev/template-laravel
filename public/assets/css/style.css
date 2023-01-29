@@ -27326,7 +27326,7 @@ table.dataTable.display tbody td {
       margin-left: auto; }
     .card-list li .circle {
       display: inline-block;
-      height: 19px;
+      /* height: 19px; */
       width: 19px;
       border-radius: 19px;
       margin-right: 10px;
