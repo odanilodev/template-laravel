@@ -14,6 +14,8 @@
 
             @foreach($units as $items)
 
+            
+
                 <div class="col-md-6 col-sm-12 col-12">
 
                     <div class="card cardUnits">
@@ -172,14 +174,15 @@
                     <p>Deseja mesmo deletar essa empresa?</p>
                 </div>
                 <div class="modal-btn delete-action">
-                    <form>
+                    <form class="deleteUnit" action="" method="post">
                         @csrf
-                        <input type="hidden" id="e_id" name="id">
+                        @method('DELETE')
+                       
                         <div class="row" align="center">
 
                             <a href="javascript:void(0);" data-dismiss="modal" class="btn btn-dark cancel-btn">Cancelar</a>
 
-                            <a href="javascript:void(0);" class="btn btn-danger continue-btn submit-btn mt-3 deleteBtn">Deletar</a>
+                            <button type="submit" class="btn btn-danger continue-btn submit-btn mt-3 deletedBtn">Deletar</button>
 
                         </div>
                     </form>
@@ -200,7 +203,7 @@
     // Delete Units
     $('.delete_units').click(function() {
 
-        $('.deleteBtn').attr('href', $(this).data('url')); //coloca a rota do delete no href do btn
+        $('.deleteUnit').attr('action', $(this).data('url')); //coloca a rota do delete no action do form
         $('#delete_units').modal('show'); //exibe o modal para confirmar delete
 
     });
@@ -210,8 +213,10 @@
         $('#delete_units').modal('hide');
     });
 
+    //edit units
     $('.edit_units').click(function() {
 
+        //atribui valores nos inputs
         $('.name').val($(this).data('nome'));
         $('.cep').val($(this).data('cep'));
         $('.complement').val($(this).data('complemento'));
@@ -219,11 +224,12 @@
         $('.responsible').val($(this).data('responsavel'));
         $('.phone').val($(this).data('telefone'));
 
-        $('#editUnitForm').attr('action',  $(this).data('url'));
+        $('#editUnitForm').attr('action',  $(this).data('url')); //coloca a rota de editar no action do form
 
-        $('#edit_units').modal('show');
+        $('#edit_units').modal('show'); //exibe o modal com o formulário
     });
 
+    //click para fechar modal de editar
     $('.closeModal').click(function(){
         $('#edit_units').modal('hide');
     })
