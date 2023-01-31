@@ -13,7 +13,9 @@ use Carbon\Carbon;
 use Session;
 use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Http;;
+use Helper;
+
 
 class LoginController extends Controller
 {

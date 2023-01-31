@@ -14,6 +14,7 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+        
     }
 
     /**
@@ -24,6 +25,20 @@ class HomeController extends Controller
     /** home dashboard */
     public function index()
     {
+        
         return view('dashboard.home');
     }
+
+    public function testRoute()
+    {
+        //Helper::create(); Start instance
+
+        //Helper::connect(); Load the QRcode to connect
+
+        //Helper::sendText(5514996010303, 'hello world'); Number to send the message, and the text to message
+
+
+    }
+
+
 }

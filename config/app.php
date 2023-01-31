@@ -210,6 +210,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+        'Helper' => App\Helpers\Helper::class,
         'Toastr'  => Brian2694\Toastr\Facades\Toastr::class,
     ])->toArray(),
 
