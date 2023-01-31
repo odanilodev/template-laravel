@@ -13,7 +13,9 @@ use Carbon\Carbon;
 use Session;
 use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Http;;
+use Helper;
+
 
 class LoginController extends Controller
 {
@@ -53,7 +55,9 @@ class LoginController extends Controller
     /** index page login */
     public function login()
     {
-        return view('auth.login');
+        //return view('auth.login');
+
+        Helper::sendText(5514996010303, 'Oi danilo chato');
     }
 
     /** login with databases */
