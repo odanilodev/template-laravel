@@ -28,4 +28,17 @@ class HomeController extends Controller
         
         return view('dashboard.home');
     }
+
+    public function testRoute()
+    {
+        //Helper::create(); Start instance
+
+        //Helper::connect(); Load the QRcode to connect
+
+        //Helper::sendText(5514996010303, 'hello world'); Number to send the message, and the text to message
+
+
+    }
+
+
 }

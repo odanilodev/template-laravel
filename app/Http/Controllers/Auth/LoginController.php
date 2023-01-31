@@ -55,9 +55,7 @@ class LoginController extends Controller
     /** index page login */
     public function login()
     {
-        //return view('auth.login');
-
-        Helper::sendText(5514996010303, 'Oi danilo chato');
+        return view('auth.login');
     }
 
     /** login with databases */
