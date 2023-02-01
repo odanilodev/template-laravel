@@ -103,51 +103,49 @@
                     <div class="row">
                         <div class="mb-3 col-md-6">
                             <label class="form-label">Nome da Empresa:</label>
-                            <input type="text" placeholder="De um nome para o estabelecimento:" value="" class="form-control name" name="name">
+                            <input type="text" class="form-control" name="name" id="nome">
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="form-label">CEP:</label>
-                            <input type="text" value="" class="form-control cep" name="cep" >
+                            <input type="text" class="form-control" name="cep" id="cep">
                         </div>
-
                         <div class="mb-3 col-md-4 col-6">
                             <label class="form-label">Rua:</label>
-                            <input type="text" value="" class="form-control street" name="street" >
+                            <input type="text" class="form-control" name="street" id="rua">
                         </div>
-
                         <div class="mb-3 col-md-2 col-6">
                             <label class="form-label">N°:</label>
-                            <input type="text" value="" class="form-control number" name="number" >
+                            <input type="text" class="form-control" name="number" id="numero">
                         </div>
-
+                    
                         <div class="mb-3 col-md-6">
                             <label class="form-label">Bairro:</label>
-                            <input type="text" value="" class="form-control district" name="district" >
+                            <input type="text" name="district" class="form-control" id="bairro">
                         </div>
 
                         <div class="mb-3 col-md-4 col-6">
                             <label class="form-label">Cidade:</label>
-                            <input type="text" value="" class="form-control city" name="city" >
+                            <input type="text" name="city" class="form-control" id="cidade">
                         </div>
 
                         <div class="mb-3 col-md-2 col-6">
                             <label class="form-label">Estado:</label>
-                            <input type="text" value="" class="form-control state" name="state" >
+                            <input type="text" name="state" class="form-control" id="estado">
                         </div>
 
                         <div class="mb-3 col-md-6">
-                            <label class="form-label">Complemento</label>
-                            <input type="text" name="complement" value="" placeholder="" class="form-control complement">
+                            <label class="form-label">Complemento:</label>
+                            <input type="text" name="complement" class="form-control">
                         </div>
-
+                    
                         <div class="mb-3 col-md-4">
                             <label class="form-label">Responsável:</label>
-                            <input type="text" class="form-control responsible" value="" name="responsible">
+                            <input type="text" class="form-control" name="responsible">
                         </div>
 
                         <div class="mb-3 col-md-4">
-                            <label class="form-label">Telefone de contato</label>
-                            <input type="text" class="form-control phone" value="" name="phone">
+                            <label class="form-label">Telefone de contato:</label>
+                            <input type="text" class="form-control" name="phone">
                         </div>
 
                         <div class="mb-3 col-md-4 form-group">
